@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include head.html %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+
+    <!-- Force Absolute Paths for CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/freelancer.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
 </head>
 <body id="page-top">
     {% include nav.html %}
@@ -24,9 +30,9 @@
 
     {% include footer.html %}
 
-    <!-- Add JavaScript to Fix Navbar and Styles -->
-    <script src="{{ "/js/jquery.min.js" | relative_url }}"></script>
-    <script src="{{ "/js/bootstrap.bundle.min.js" | relative_url }}"></script>
-    <script src="{{ "/js/freelancer.min.js" | relative_url }}"></script>
+    <!-- Force Absolute Paths for JavaScript -->
+    <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.baseurl }}/js/freelancer.min.js"></script>
 </body>
 </html>

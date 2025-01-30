@@ -21,7 +21,10 @@ author: Some Person
 
 navbar-links:
     About Me: "aboutme"
-    Visualisation 1: "visualisation1"
+    A&E Dashboard:          "visualisation1"
+    HCAHPS Dashboard:       "visualisation2"
+    Vaccination Metrics:    "visualisation3"
+    TBA:                    "visualisation4"
     Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"

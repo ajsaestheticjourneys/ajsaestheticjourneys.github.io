@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "My Tableau Visualizations"
+title: "My Tableau Visualisations"
 ---
 
-permalink: /visualizations/
+permalink: /visualisations/
 ---
 
 # My Tableau Visualizations

@@ -22,8 +22,8 @@
     {% assign page_description = site.description %}
   {% endif %}
 
-  {% assign page_url = page.url | replace: "index.html","" | replace: ".html","" | prepend: site.baseurl | prepend: site.url %}
-  {% assign page_image = site.og_image | prepend: site.baseurl | prepend: site.url %}
+  {% assign page_url = page.url | replace: "index.html","" | replace: ".html","" | prepend: site.url %}
+  {% assign page_image = site.og_image | prepend: site.url %}
   {% if page.og_image %}
     {% assign page_image = site.url | append: page.og_image %}
   {% endif %}
@@ -60,16 +60,16 @@
   {% endif %}
 
   <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css"/>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"/>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"/>
 
   <!-- JavaScript -->
+  <script src="/assets/js/main.js"></script>
   <script src="{{ "/assets/js/main.js" | absolute_url }}"></script>
-  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
   <!-- Canonical & Favicon -->
   <link rel="canonical" href="{{ page_url }}"/>
-  <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 
   <!-- Google Analytics -->
   <script>

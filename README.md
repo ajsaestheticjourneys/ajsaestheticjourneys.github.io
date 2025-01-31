@@ -92,25 +92,12 @@ footer:
       value: YourWeChatUsername
       link: "#"
   follow:
-    - type: twitter
-      name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - type: facebook
-      name: Facebook
-      link: http://facebook.com/YourFacebookUsername
     - type: linkedin
       name: LinkedIn
       link: http://linkedin.com/in/YourLinkedInUsername
     - type: github
       name: GitHub
       link: http://github.com/YourGitHubUsername
-    - type: dribbble
-      name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - type: rss
-      name: RSS
-      link: /feed.xml
 ```
 Re-run `jekyll serve` to see the footer updated.
 

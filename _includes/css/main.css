@@ -488,9 +488,22 @@ footer .footer-below {
     background-color: transparent !important;
 }
 
+.page-style {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
 .page-header {
     background-color: #2c3e50;
     color: white;
     padding: 50px 0;
     text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-style .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }

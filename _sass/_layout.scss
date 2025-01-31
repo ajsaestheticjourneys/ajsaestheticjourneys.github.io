@@ -169,9 +169,14 @@
     max-width: none; /* Remove max width */
     padding: 20px; /* Add spacing */
 }
-
 .wrapper {
     max-width: none; /* Remove the default max-width */
     width: 100%; /* Allow full-page expansion */
     padding: 0; /* Remove any default padding */
+}
+
+.full-width {
+    width: 100%; /* Expands the content to the full width of the screen */
+    max-width: none; /* Removes any default max width limitation */
+    padding: 0 20px; /* Ensures there is spacing on the sides */
 }

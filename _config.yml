@@ -3,8 +3,8 @@
 
 title: AJs Aesthetic Journeys
 description: Bay is a minimal Jekyll Theme.
-baseurl: "/"
-url: "/"
+baseurl: "/bay"
+url: "https://eliottvincent.github.io"
 og_image: /assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
 

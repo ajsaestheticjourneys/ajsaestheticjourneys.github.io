@@ -4,7 +4,7 @@ source "https://rubygems.org"
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
 #
 #     bundle exec jekyll serve
-gem "jekyll", "~> 4.3.4"
+gem "github-pages", group: :jekyll_plugins
 
 # Plugins
 group :jekyll_plugins do

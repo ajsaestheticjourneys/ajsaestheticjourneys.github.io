@@ -12,7 +12,7 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: Work
+    - name: About
     - name: A&E Dashboard
     - name: HCAHPs Dashboard
     - name: A&E Dashboard

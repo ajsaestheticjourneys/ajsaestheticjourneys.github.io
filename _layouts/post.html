@@ -23,12 +23,18 @@
             {% endif %}
             </h1>
 
-            {% if page.subtitle %}<h1 class="post-subtitle">{{ page.subtitle }}</h1>{% endif %}
-            
+            {% if page.subtitle %}
+              <h1 class="post-subtitle">{{ page.subtitle }}</h1>
+            {% endif %}
+
             <p class="post-meta">
               <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
-              {% if page.author %} <span> • {{ page.author }}</span> {% endif %}
-              {% if page.meta %} <span> • {{ page.meta }}</span> {% endif %}
+              {% if page.author %}
+                <span> • {{ page.author }}</span>
+              {% endif %}
+              {% if page.meta %}
+                <span> • {{ page.meta }}</span>
+              {% endif %}
             </p>
 
           </header>

@@ -1,9 +1,9 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: AJs Aesthetic Journies
-description: Bay
-baseurl: "/"
+title: Bay Jekyll Theme
+description: Bay is a minimal Jekyll Theme.
+baseurl: "/bay"
 url: "https://eliottvincent.github.io"
 og_image: /assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
@@ -23,6 +23,8 @@ footer:
     - type: email
       name: Email
       value: albertqpome@gmail.com
+    - type: wechat
+      value: YourWeChatUsername
       link: "#"
   follow:
     - type: linkedin

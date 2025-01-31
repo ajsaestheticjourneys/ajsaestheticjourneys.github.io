@@ -11,15 +11,15 @@ google_analytics: "UA-121636368-3"
 header:
   pages:
     - name: Home
-      slug: /
+      slug: "/"
     - name: About
-      slug: /about
+      slug: "/about"
     - name: A&E Dashboard
-      slug: /emergencyroom
+      slug: "/emergencyroom"
     - name: HCAHPS Dashboard
-      slug: /patientsatisfaction
+      slug: "/patientsatisfaction"
     - name: Vaccination Dashboard
-      slug: /vaccinationmetrics
+      slug: "/vaccinationmetrics"
         
 footer:
   show_powered_by: true

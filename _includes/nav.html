@@ -28,16 +28,16 @@
           <a href="#contact">Contact</a>
         </li>
 
-        
-        <a href="/emergencyroom/">ARE Dashboard</a>
+        <li class="{% if page.url == '/emergencyroom/' %}active{% endif %}">
+        <a href="/emergencyroom/">A&E Dashboard</a>
         </li>    
           
-        
-        <a href="/patientsatisfaction/">HCAHPZ Dashboard</a>
+        <li class="{% if page.url == '/patientsatisfaction/' %}active{% endif %}">
+        <a href="/patientsatisfaction/">HCAHPS Dashboard</a>
         </li>
           
-        
-        <a href="/vaccinationmetrics/">Vaccinatiom Dashboard</a>
+        <li class="{% if page.url == '/vaccinationmetrics/' %}active{% endif %}">
+        <a href="/vaccinationmetrics/">Vaccination Dashboard</a>
         </li>
 
       </ul>

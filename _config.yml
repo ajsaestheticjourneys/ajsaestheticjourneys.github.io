@@ -12,9 +12,7 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: A&E Dashboard
-    - name: HCAHPS Dashboard
-    - name: Vaccination Dashboard
+    - name: Work
     - name: Blog
 
 footer:

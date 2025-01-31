@@ -119,7 +119,7 @@
   margin-left: 0;
 }
 
-.footer-col-page-content full-width {
+.footer-col-wrapper {
   font-size: 15px;
   color: variables.$color-grey;
   margin-left: calc(-1 * variables.$spacing-unit / 2);
@@ -165,18 +165,9 @@
  * Page content
  */
 .page-content {
-    width: 100%; /* Full-width */
-    max-width: none; /* Remove max width */
-    padding: 20px; /* Add spacing */
-}
-.page-content full-width {
-    max-width: none; /* Remove the default max-width */
-    width: 100%; /* Allow full-page expansion */
-    padding: 0; /* Remove any default padding */
+  padding: variables.$spacing-unit 0;
 }
 
-.full-width {
-    width: 100%; /* Expands the content to the full width of the screen */
-    max-width: none; /* Removes any default max width limitation */
-    padding: 0 20px; /* Ensures there is spacing on the sides */
+.page-heading {
+  font-size: 20px;
 }

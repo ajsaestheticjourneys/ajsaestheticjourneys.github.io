@@ -119,7 +119,7 @@
   margin-left: 0;
 }
 
-.footer-col-wrapper {
+.footer-col-page-content full-width {
   font-size: 15px;
   color: variables.$color-grey;
   margin-left: calc(-1 * variables.$spacing-unit / 2);
@@ -169,7 +169,7 @@
     max-width: none; /* Remove max width */
     padding: 20px; /* Add spacing */
 }
-.wrapper {
+.page-content full-width {
     max-width: none; /* Remove the default max-width */
     width: 100%; /* Allow full-page expansion */
     padding: 0; /* Remove any default padding */

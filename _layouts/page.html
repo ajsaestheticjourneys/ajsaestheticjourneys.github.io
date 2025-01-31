@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
 
-<head>
-    {% include head.html %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
-</head>
-
-<body class="page-style" class="index">
-    {% include nav.html %}
-    {% include header.html %}
-    {% else %}
-    {% include footer.html %}
-    {% include js.html %}
-</body>
-
-</html>
+<div class="col-lg-10 mx-auto mt-5 markdown-body">
+  {{ content }}
+</div>

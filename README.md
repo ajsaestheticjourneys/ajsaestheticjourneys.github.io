@@ -1,32 +1,11 @@
-Freelancer Jekyll theme  
-=========================
+<div align="center">
+  <h1>portfolYOU</h1>
+  <i>A beautiful portfolio Jekyll theme that works with GitHub Pages.</i>
 
-Jekyll theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/template-overviews/freelancer/)
+  <a href="https://yousinix.github.io/portfolYOU/">Live Demo</a>
+  •
+  <a href="https://yousinix.github.io/portfolYOU/docs/">Documentation</a>
 
-## How to use
- - Place a image in `/img/portfolio/`
- - Replace `your-email@domain.com` in `_config.yml` with your email address. Refer to [formspree](http://formspree.io/) for more information.
- - Create posts to display your projects. Use the follow as an example:
-```txt
----
-layout: default
-modal-id: 1
-date: 2020-01-18
-img: cabin.png
-alt: image-alt
-project-date: January 2020
-client: The Client
-category: Web Development
-description: The description of the project
-
----
-```
-
-## Demo
-View this jekyll theme in action [here](https://jeromelachaud.com/freelancer-theme)
-
-## Screenshot
-![screenshot](https://raw.githubusercontent.com/jeromelachaud/freelancer-theme/master/screenshot.png)
-
----------
-For more details, read the [documentation](http://jekyllrb.com/)
+  <a href="https://yousinix.github.io/portfolYOU"><img src="screenshot.gif"></a>
+  <sub><sup>© 2024 portfolYOU, licensed under the <a href="./LICENSE">MIT License</a>.</sup></sub>
+</div>

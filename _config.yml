@@ -13,10 +13,14 @@ header:
     - name: Home
       slug: /
     - name: About
-    - name: emergencyroom
-    - name: patientsatisfaction
-    - name: vaccinationmetrics
-
+      slug: /about
+    - name: A&E Dashboard
+      slug: /emergencyroom
+    - name: HCAHPS Dashboard
+      slug: /patientsatisfaction
+    - name: Vaccination Dashboard
+      slug: /vaccinationmetrics
+        
 footer:
   show_powered_by: true
   contact:

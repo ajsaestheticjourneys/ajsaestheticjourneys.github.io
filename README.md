@@ -1,102 +1,173 @@
-# Gokarna
+# Bay
 
-Gokarna is an opinionated theme with a focus on minimalism and simplicity.
+[![Version](https://img.shields.io/gem/v/bay_jekyll_theme)](https://rubygems.org/gems/bay_jekyll_theme)
+[![Downloads](https://img.shields.io/gem/dt/bay_jekyll_theme)](https://rubygems.org/gems/bay_jekyll_theme)
 
-### Authors:
+Bay is a simple theme for Jekyll. [[view live]](https://eliottvincent.github.io/bay)
 
-- [Yash Mehrotra](https://yashmehrotra.com)
-- [Avijit Gupta](https://twitter.com/526avijit)
+Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliottvincent.com](http://eliottvincent.com/).
 
-#### Major Contributors
-- [James Davidson](https://jamesdavidson.xyz)
-- [David Kröll](https://davidkroell.com)
-- [Mansoor Barri](https://mansoorbarri.com)
+![](/screenshot.png)
 
-### Demo: [https://gokarna-hugo.netlify.app](https://gokarna-hugo.netlify.app)
 
-## Support the developer
+## Table of contents
+1. [Installation](#installation)
+2. Website sections
+    1. [Header](#header)
+    2. [Footer](#footer)
+    3. [Home page](#home-page)
+    4. [Blog page](#blog-page)
+5. [GitHub Pages](#github-pages)
+6. [Development instructions](#development)
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/avijitgupta)
 
-## Features
+### Installation
 
-Gokarna is fast, responsive, and [SEO-friendly](#performance).
 
-- Light and dark modes
-- [Feather](https://feathericons.com/) and [Simple](https://gokarna-hugo.netlify.app/posts/theme-documentation-advanced/#icons-on-homepage) icons
-- [KaTeX](https://gokarna-hugo.netlify.app/posts/theme-documentation-advanced/#katex) math typesetting 
-- [Syntax highlighting](https://gokarna-hugo.netlify.app/posts/theme-documentation-advanced/#syntax-highlighting)
-- [Custom HTML, JavaScript, and CSS](https://gokarna-hugo.netlify.app/posts/theme-documentation-advanced/#custom-head-and-footer-html)
-- [Configurable Table of Contents](https://gokarna-hugo.netlify.app/posts/theme-documentation-advanced/#table-of-contents)
-- Español (Spanish/Catalan), Deutsch (German), Français (French), Polski (Polish), and Русский (Russian) [translations](https://github.com/gokarna-theme/gokarna-hugo/tree/main/i18n)
-- Google Lato fonts
-- Auto-generated RSS feed
+The easiest solution is to [fork this repo](https://github.com/eliottvincent/bay/fork).
+If you want to start from a clean website, follow the steps below:
 
-And more...
-
-## Screenshots
-
-### Homepage
-
-Light Mode                                                      | Dark Mode
-:-------------------------:|:-------------------------:
-![Light mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-light-home.png "Light mode") | ![Dark mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-dark-home.png "Dark mode")
-
-### Post page
-
-Light Mode                                                      | Dark Mode
-:-------------------------:|:-------------------------:
-![Light mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-light-post.png "Light mode") | ![Dark mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-dark-post.png "Dark mode")
-
-### List page
-
-Light Mode                                                      | Dark Mode
-:-------------------------:|:-------------------------:
-![Light mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-light-list.png "Light mode") | ![Dark mode](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/screenshot-dark-list.png "Dark mode")
-
-## Installation
-
-Follow the steps in [Theme Documentation - Basics](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#installation).
-
-```sh
-git submodule add https://github.com/gokarna-theme/gokarna-hugo.git themes/gokarna
+Create a new Jekyll website:
+```
+jekyll new mysite
 ```
 
-## Customization
+Open `Gemfile` and replace the line:
+```
+gem "minima"
+```
+with:
+```
+gem "bay_jekyll_theme"
+```
 
-For a complete guide on customization, please consult the [basic](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/) and [advanced](https://gokarna-hugo.netlify.app/posts/theme-documentation-advanced/) documentation.
+Open `_config.yml` and replace the line:
+```
+theme: minima
+```
+with:
+```
+theme: bay_jekyll_theme
+```
+or, for GitHub Pages:
+```
+remote_theme: eliottvincent/bay
+```
 
-Examples include:
+Finally, install the dependencies:
+```
+bundle install
+```
 
-- [Add an avatar](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#avatar-url) and [change its size](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#avatar-size)
-- [Add text to the footer](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#footer)
-- [Change how dates are formatted on posts](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#date-format)
-- [Choose the syntax highlighting color scheme](https://gokarna-hugo.netlify.app/posts/theme-documentation-advanced/#syntax-highlighting)
-- [Compose navigation menu items](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#basic-configuration)
-- [Define the site's accent color](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#accent-color)
-    Change the color of hyperlinks, including icons.
-- [Display recent or popular posts on the home page](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#display-posts-on-the-home-page)
-- [Inject custom HTML](https://gokarna-hugo.netlify.app/posts/theme-documentation-basics/#custom-head-html)
-    Use the `<head>` and `<footer>` elements to add arbitrary HTML, JavaScript, and CSS.
+and build the website!
+```
+jekyll serve
+```
 
-## Translations
 
-Change [`languageCode`](https://gohugo.io/content-management/multilingual/#configure-languages) to use one of [our translations](https://github.com/gokarna-theme/gokarna-hugo/tree/main/i18n).
+The website will look somewhat empty at first. That's normal. Follow the next instructions to complete the header and footer components, and the home and blog pages.
 
-Missing a language? Make Gokarna multilingual by [creating a translation table](https://gohugo.io/functions/lang/translate/#simple-translations).
+#### Header
+Open the `_config.yml` file and add the following:
+```yml
+header:
+  pages:
+    - name: Home
+      slug: /     # <-- index.md
+    - name: Blog  # <-- blog.md
+    - name: Whatever  # <-- whatever.md
+```
+Re-run `jekyll serve` to see the header updated.
 
-## Inspiration
+#### Footer
+Open the `_config.yml` file and add the following:
+```yml
+footer:
+  show_powered_by: true
+  contact:
+    - type: email
+      name: Email
+      value: yourmail@domain.com
+    - type: wechat
+      value: YourWeChatUsername
+      link: "#"
+  follow:
+    - type: twitter
+      name: Twitter
+      link: http://twitter.com/YourTwitterUsername
+      username: "@YourTwitterUsername"
+    - type: facebook
+      name: Facebook
+      link: http://facebook.com/YourFacebookUsername
+    - type: linkedin
+      name: LinkedIn
+      link: http://linkedin.com/in/YourLinkedInUsername
+    - type: github
+      name: GitHub
+      link: http://github.com/YourGitHubUsername
+    - type: dribbble
+      name: Dribbble
+      link: https://dribbble.com/YourDribbbleUsername
+    - type: rss
+      name: RSS
+      link: /feed.xml
+```
+Re-run `jekyll serve` to see the footer updated.
 
-The theme is inspired by, and accordingly named after, [Gokarna](https://en.wikipedia.org/wiki/Gokarna,_Karnataka), a small and peaceful beach town on the west coast of India.
+#### Home page
+Create (or edit) the `index.markdown` file and add the following:
+```yml
+---
+layout: home
+profile_picture:
+  src: /assets/img/profile-pic.jpg
+  alt: website picture
+---
 
-![Gokarna](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/gokarna.jpg)
+<p>
+  Welcome to my site!
+</p>
+```
 
-## Performance
+#### Blog page
+Create `blog.markdown` file and add the following:
+```yml
+---
+layout: blog
+title: Blog
+slug: /blog
+---
 
-Google Lighthouse score: 100%
+This is an example of a "Blog" page, displaying a list of posts.
+<br />
+```
 
-![Lighthouse Score](https://raw.githubusercontent.com/526avijitgupta/gokarna/main/images/lighthouse.png)
 
-## LICENSE
+Your website is ready!
 
-This code is licensed under [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html)
+
+### GitHub Pages
+
+You can deploy your website to GitHub Pages, but you cannot use the 1-click GitHub Pages build and deploy system. The issue is that the Bay theme relies on Jekyll 4.3+ (which uses a more modern Sass processor), whereas the GitHub Pages build system uses an older version of Jekyll.
+
+However, it's fairly easy to build and deploy your website with GitHub Actions, yet use GitHub Pages to host it.
+
+Further explanations and instructions can be found on the official [Jekyll website](https://jekyllrb.com/docs/continuous-integration/github-actions/).
+
+You can also refer to the [`.github/workflows/deploy.yml`](https://github.com/eliottvincent/bay/blob/master/.github/workflows/deploy.yml) file in this repository.
+
+### Development
+
+#### Run development instance (with hot-reload)
+```sh
+bundle exec jekyll serve
+```
+
+#### Build and publish the gem
+```sh
+gem build bay_jekyll_theme.gemspec
+```
+
+```sh
+gem push bay_jekyll_theme-1.x.x.gem
+```

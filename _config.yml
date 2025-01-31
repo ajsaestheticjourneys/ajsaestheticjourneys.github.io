@@ -12,9 +12,9 @@ header:
     - name: Home
       slug: /
     - name: About
-    - name: A&E Dashboard
-    - name: HCAHPs Dashboard
-    - name: A&E Dashboard
+    - name: emergencyroom
+    - name: patientsatisfaction
+    - name: vaccinationmetrics
 
 footer:
   show_powered_by: true

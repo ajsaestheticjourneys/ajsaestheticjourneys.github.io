@@ -29,10 +29,11 @@
     {% assign page_image = site.url + page.og_image %}
   {% endif %}
 
-  {% for follow in site.footer.follow %}
-      {% break %}
-    {% endfor %}
-  {% endfor %}
+{% for follow in site.footer.follow %}
+  {% if forloop.first %}
+    <a href="{{ follow.url }}" target="_blank">{{ follow.name }}</a>
+  {% endif %}
+{% endfor %}
 
   <!-- Primary Meta Tags -->
   <title>{{ page_title }}</title>

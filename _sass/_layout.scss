@@ -165,9 +165,13 @@
  * Page content
  */
 .page-content {
-  padding: variables.$spacing-unit 0;
+    width: 100%; /* Full-width */
+    max-width: none; /* Remove max width */
+    padding: 20px; /* Add spacing */
 }
 
-.page-heading {
-  font-size: 20px;
+.wrapper {
+    max-width: none; /* Remove the default max-width */
+    width: 100%; /* Allow full-page expansion */
+    padding: 0; /* Remove any default padding */
 }

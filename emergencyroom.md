@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "A&E Dashboard"
-permalink: /emergencyroom/
+permalink: /emergencyroom
 ---
 
 <h1>A&E Dashboard</h1>

@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email                 = ["hello@eliottvincent.com"]
 
   spec.summary               = %q{A simple and minimal Jekyll theme.}
-  spec.homepage              = "https://github.com/eliottvincent/bay"
+  spec.homepage              = "https://github.com/eliottvincent/"
   spec.license               = "MIT"
 
   spec.required_ruby_version = ">= 3.3.0"

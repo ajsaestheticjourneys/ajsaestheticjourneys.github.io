@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Vaccination Dashboard"
-permalink: /vaccinationmetrics/
+permalink: /vaccinationmetrics
 ---
 
 <h1>Vaccination Dashboard</h1>

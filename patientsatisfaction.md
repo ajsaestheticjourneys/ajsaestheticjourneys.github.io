@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "HCAHPS Dashboard"
-permalink: /patientsatisfaction/
+permalink: /patientsatisfaction
 ---
 
 <h1>HCAHPS Dashboard</h1>

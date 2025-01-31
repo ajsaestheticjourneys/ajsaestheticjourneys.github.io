@@ -23,9 +23,6 @@ footer:
     - type: email
       name: Email
       value: albertqpome@gmail.com
-    - type: wechat
-      value: YourWeChatUsername
-      link: "#"
   follow:
     - type: linkedin
       name: LinkedIn

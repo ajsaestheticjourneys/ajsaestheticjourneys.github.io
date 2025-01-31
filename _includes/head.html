@@ -23,10 +23,9 @@
   {% endif %}
 
   {% assign page_url = page.url | replace: "index.html","" | replace: ".html","" | prepend: site.baseurl | prepend: site.url %}
-
   {% assign page_image = site.og_image | prepend: site.baseurl | prepend: site.url %}
   {% if page.og_image %}
-    {% assign page_image = site.url + page.og_image %}
+    {% assign page_image = site.url | append: page.og_image %}
   {% endif %}
 
   {% for follow in site.footer.follow %}
@@ -60,7 +59,15 @@
     <meta property="twitter:site" content="{{ twitter_username }}"/>
   {% endif %}
 
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"/>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"/>
+
+  <!-- JavaScript -->
+  <script src="{{ "/assets/js/main.js" | absolute_url }}"></script>
+  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+  <!-- Canonical & Favicon -->
   <link rel="canonical" href="{{ page_url }}"/>
   <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}" type="image/x-icon"/>
 
@@ -71,6 +78,5 @@
     ga('send', "pageview");
   </script>
   <script async src="https://www.google-analytics.com/analytics.js"></script>
-
 
 </head>

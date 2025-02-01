@@ -24,9 +24,10 @@
   letter-spacing: -1px;
   float: left;
 
-  img {
-    height: 23px;
-  }
+img {
+    max-width: 30%;
+    height: auto;
+}
 
   &,
   &:visited {

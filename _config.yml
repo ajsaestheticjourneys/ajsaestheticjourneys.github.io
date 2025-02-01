@@ -12,8 +12,8 @@ header:
   pages:
     - name: Home
       slug: "/"
-    - name: About
-      slug: "/about"
+    - name: Work
+      slug: "/work"
     - name: A&E Dashboard
       slug: "/emergencyroom"
     - name: HCAHPS Dashboard

@@ -190,7 +190,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  position: relative;
+  position: left;
   max-width: -webkit-calc(760px - (#{variables.$spacing-unit} * 2));
   max-width: calc(760px - (variables.$spacing-unit * 2));
   margin-right: auto;

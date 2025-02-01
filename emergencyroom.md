@@ -1,7 +1,6 @@
 ---
 layout: work
 title: A&E Dashboard
-slug: /work
 full-width: true
 permalink: /emergencyroom
 ---

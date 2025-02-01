@@ -1,5 +1,5 @@
 ---
-layout: emergencyroom
+layout: default
 title: A&E Dashboard
 permalink: /emergencyroom
 ---
@@ -8,4 +8,4 @@ permalink: /emergencyroom
 
 <p>This dashboard analyzes patient satisfaction scores from HCAHPS surveys.</p>
 
-<iframe src="https://public.tableau.com/views/HCAHPSPatientSurveySatisfactionScores/HCAHPSSurveyDashboard?:showVizHome=no&embed=true" width="1366" height="768"></iframe>
+<iframe src="https://public.tableau.com/views/HCAHPSPatientSurveySatisfactionScores/HCAHPSSurveyDashboard?:showVizHome=no&embed=true" width="800" height="600"></iframe>

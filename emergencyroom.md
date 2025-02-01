@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default2
 title: A&E Dashboard
 full-width: true
 permalink: /emergencyroom

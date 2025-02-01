@@ -12,3 +12,4 @@ full-width: true
 
 <iframe src="https://public.tableau.com/views/VaccinationDashboard6/Dashboard?:showVizHome=no&embed=true" width="1400" height="800"></iframe>
 </div>
+

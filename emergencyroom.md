@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: visualisation
 title: A&E Dashboard
 full-width: true
 permalink: /emergencyroom

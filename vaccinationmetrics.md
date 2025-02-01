@@ -2,6 +2,7 @@
 layout: default
 title: "Vaccination Dashboard"
 permalink: /vaccinationmetrics
+full-width: true
 ---
 
 <div class="dashboard-wrapper">

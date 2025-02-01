@@ -2,6 +2,7 @@
 layout: default
 title: "HCAHPS Dashboard"
 permalink: /patientsatisfaction
+full-width: true
 ---
 
 <div class="dashboard-wrapper">

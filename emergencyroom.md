@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "A&E Dashboard"
+full-width: true
 permalink: /emergencyroom
 ---
 

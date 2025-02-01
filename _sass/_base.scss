@@ -23,6 +23,8 @@ ul,
 figure {
   margin: 0;
   padding: 0;
+  margin-left: 0 !important;
+  text-align: left;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -188,7 +190,13 @@ pre {
  * Wrapper
  */
 .wrapper {
-  position: left;
+  position: relative;
+  max-width: -webkit-calc(760px - (#{variables.$spacing-unit} * 2));
+  max-width: calc(760px - (variables.$spacing-unit * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: variables.$spacing-unit;
+  padding-left: variables.$spacing-unit;
 
   @extend %clearfix;
 

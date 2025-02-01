@@ -12,10 +12,6 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 3.3.0"
 
-  spec.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^((assets|_includes|_layouts|_sass|_config.yml|index.html|404.html))|(LICENSE|README|CHANGELOG)((\.txt|\.md|\.markdown|\.js|\.css|\.scss|\.png|\.jpg|\.ico|\.svg|\.yml|\.html|\.json|\.xml|\.gif|\.woff2|\.woff|\.ttf|\.eot)$)}i)
-  end
-
   spec.add_development_dependency "jekyll", "~> 4.3.4"
   spec.add_development_dependency "bundler", "~> 2.0"
 end

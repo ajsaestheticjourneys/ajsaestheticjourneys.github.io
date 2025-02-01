@@ -23,8 +23,6 @@ ul,
 figure {
   margin: 0;
   padding: 0;
-  margin-left: 0 !important;
-  text-align: left;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -32,6 +30,7 @@ figure {
  * Basic styling
  */
 body {
+  align-content: left; 
   font-family: variables.$base-font-family;
   font-size: variables.$base-font-size;
   line-height: variables.$base-line-height;
@@ -190,8 +189,23 @@ pre {
  * Wrapper
  */
 .wrapper {
-  position: left;
+  position: relative;
+  max-width: -webkit-calc(760px - (#{variables.$spacing-unit} * 2));
+  max-width: calc(760px - (variables.$spacing-unit * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: variables.$spacing-unit;
+  padding-left: variables.$spacing-unit;
 
+  @extend %clearfix;
+
+  @include mixins.media-query(variables.$on-laptop) {
+    max-width: -webkit-calc(800px - (#{variables.$spacing-unit}));
+    max-width: calc(800px - variables.$spacing-unit);
+    padding-right: calc(variables.$spacing-unit / 2);
+    padding-left: calc(variables.$spacing-unit / 2);
+  }
+}
 
 /**
  * Icons

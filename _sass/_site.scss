@@ -63,7 +63,7 @@
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 
   padding: 24px;
-  text-align: left;
+  text-align: center;
 
   p {
     font-size: 11px;
@@ -85,4 +85,31 @@
     width: 100%;
     max-width: none;
     padding: 0 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 100%; /* Full width */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Align text left */
+}
+
+.content {
+    margin-left: 0 !important;
+    text-align: left;
+}
+
+.site-header, .site-footer {
+    text-align: left;
+}
+
+.page {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
 }

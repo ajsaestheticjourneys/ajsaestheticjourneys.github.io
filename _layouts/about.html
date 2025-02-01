@@ -13,11 +13,8 @@
 
           {% for item in page.items %}
           <div class="about-item">
-            <img
-              src="{{ item.image.src}}{{ site.url }}{{ site.baseurl }}"
-              alt="{{ item.image.alt }}"
-              class="about-bubble"
-            />
+    <img src="{{ site.baseurl }}{{ item.image.src }}" alt="{{ item.image.alt }}" class="about-bubble" />
+
             <span class="about-text">
               <strong>{{ item.title }}</strong>
               &mdash;

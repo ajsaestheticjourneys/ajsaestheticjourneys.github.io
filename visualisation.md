@@ -1,7 +1,7 @@
 ---
-layout: work
-title: Work
-slug: /work
+layout: visualisation
+title: A&ED
+slug: /emergencyroom
 items:
   - title: My Interest 1
     image:

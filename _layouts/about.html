@@ -14,7 +14,7 @@
           {% for item in page.items %}
           <div class="about-item">
             <img
-              src="{{ site.url }}{{ site.baseurl }}{{ item.image.src }}"
+              src="{{ item.image.src}}{{ site.url }}{{ site.baseurl }}"
               alt="{{ item.image.alt }}"
               class="about-bubble"
             />

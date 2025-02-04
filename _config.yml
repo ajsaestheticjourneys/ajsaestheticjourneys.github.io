@@ -1,62 +1,30 @@
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+###########
+# site.url, site.title
 
-title: AJX
-description: B is a minimal Jekyll Theme.
-baseurl: "/"
-url: "https://ajsaestheticjourneys.github.io"
-og_image: /assets/img/profile-pic.jpg
-google_analytics: "UA-121636368-3"
+title: 'Jekyll Bootstrap Theme'
 
-header:
-  pages:
-    - name: Home
-      slug: "/"
-    - name: Work
-      slug: "/work"
-    - name: A&E Dashboard
-      slug: "/emergencyroom"
-    - name: HCAHPS Dashboard
-      slug: "/patientsatisfaction"
-    - name: Vaccination Dashboard
-      slug: "/vaccinationmetrics"
+## note: 
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+path: /jekyll-bootstrap-theme
+url:  'http://henrythemes.github.io/jekyll-bootstrap-theme'
 
-footer:
-  show_powered_by: true
-  contact:
-    - type: email
-      name: Email
-      value: yourmail@domain.com
-    - type: wechat
-      value: YourWeChatUsername
-      link: "#"
-  follow:
-    - type: linkedin
-      name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
-    - type: github
-      name: GitHub
-      link: http://github.com/YourGitHubUsername
 
-# Build settings
+########
+# more settings
+
 markdown: kramdown
+
 sass:
-    style: :compressed
-plugins:
-  - jekyll-feed
+  sass_dir: css
+  style:    expanded
 
-# Excluded items
+
+
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - feed.xml
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+- README.md
 
-# Used for defeating caching
-version: 1
+
+safe: true
+lsi: false
+

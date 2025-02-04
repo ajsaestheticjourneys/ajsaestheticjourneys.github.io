@@ -1,173 +1,50 @@
-# Bay
+# jekyll-bootstrap-theme
 
-[![Version](https://img.shields.io/gem/v/bay_jekyll_theme)](https://rubygems.org/gems/bay_jekyll_theme)
-[![Downloads](https://img.shields.io/gem/dt/bay_jekyll_theme)](https://rubygems.org/gems/bay_jekyll_theme)
-
-Bay is a simple theme for Jekyll. [[view live]](https://eliottvincent.github.io/bay)
-
-Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliottvincent.com](http://eliottvincent.com/).
-
-![](/screenshot.png)
+Jekyll theme w/ Bootstrap; see a live demo @ [`henrythemes.github.io/jekyll-bootstrap-theme` »](http://henrythemes.github.io/jekyll-bootstrap-theme)
 
 
-## Table of contents
-1. [Installation](#installation)
-2. Website sections
-    1. [Header](#header)
-    2. [Footer](#footer)
-    3. [Home page](#home-page)
-    4. [Blog page](#blog-page)
-5. [GitHub Pages](#github-pages)
-6. [Development instructions](#development)
+Note: The theme uses the bootstrap sass/scss (source) version
+letting you change (override) all bootstrap css variables.
+
+Example:
+
+~~~
+tbd
+~~~
 
 
-### Installation
+Note: GitHub Pages has built-in support for sass/scss, thus, your static
+site will result in a single all-in-one-file stylesheet, that is, `style.css`.
 
 
-The easiest solution is to [fork this repo](https://github.com/eliottvincent/bay/fork).
-If you want to start from a clean website, follow the steps below:
 
-Create a new Jekyll website:
-```
-jekyll new mysite
-```
+## Build & Update Notes
 
-Open `Gemfile` and replace the line:
-```
-gem "minima"
-```
-with:
-```
-gem "bay_jekyll_theme"
-```
+- Get a copy of the [`bootstrap-sass`](https://github.com/twbs/bootstrap-sass)
+  archive - the official Sass port of Bootstrap
 
-Open `_config.yml` and replace the line:
-```
-theme: minima
-```
-with:
-```
-theme: bay_jekyll_theme
-```
-or, for GitHub Pages:
-```
-remote_theme: eliottvincent/bay
-```
-
-Finally, install the dependencies:
-```
-bundle install
-```
-
-and build the website!
-```
-jekyll serve
-```
+tbd
 
 
-The website will look somewhat empty at first. That's normal. Follow the next instructions to complete the header and footer components, and the home and blog pages.
-
-#### Header
-Open the `_config.yml` file and add the following:
-```yml
-header:
-  pages:
-    - name: Home
-      slug: /     # <-- index.md
-    - name: Blog  # <-- blog.md
-    - name: Whatever  # <-- whatever.md
-```
-Re-run `jekyll serve` to see the header updated.
-
-#### Footer
-Open the `_config.yml` file and add the following:
-```yml
-footer:
-  show_powered_by: true
-  contact:
-    - type: email
-      name: Email
-      value: yourmail@domain.com
-    - type: wechat
-      value: YourWeChatUsername
-      link: "#"
-  follow:
-    - type: twitter
-      name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - type: facebook
-      name: Facebook
-      link: http://facebook.com/YourFacebookUsername
-    - type: linkedin
-      name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
-    - type: github
-      name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - type: dribbble
-      name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - type: rss
-      name: RSS
-      link: /feed.xml
-```
-Re-run `jekyll serve` to see the footer updated.
-
-#### Home page
-Create (or edit) the `index.markdown` file and add the following:
-```yml
----
-layout: home
-profile_picture:
-  src: /assets/img/profile-pic.jpg
-  alt: website picture
----
-
-<p>
-  Welcome to my site!
-</p>
-```
-
-#### Blog page
-Create `blog.markdown` file and add the following:
-```yml
----
-layout: blog
-title: Blog
-slug: /blog
----
-
-This is an example of a "Blog" page, displaying a list of posts.
-<br />
-```
 
 
-Your website is ready!
+## Alternative Jekyll Themes
+
+- [Shiori](https://github.com/ellekasai/shiori) by Elle Kasai
+  (ships w/ pre-defined color themes e.g. Dark, Turquoise, Green, Blue, Purple, Orange, Red)
 
 
-### GitHub Pages
 
-You can deploy your website to GitHub Pages, but you cannot use the 1-click GitHub Pages build and deploy system. The issue is that the Bay theme relies on Jekyll 4.3+ (which uses a more modern Sass processor), whereas the GitHub Pages build system uses an older version of Jekyll.
+### More Themes
 
-However, it's fairly easy to build and deploy your website with GitHub Actions, yet use GitHub Pages to host it.
+See the [Dr. Jekyll's Themes](https://drjekyllthemes.github.io) directory.
 
-Further explanations and instructions can be found on the official [Jekyll website](https://jekyllrb.com/docs/continuous-integration/github-actions/).
+### More Quick Starter Wizard Scripts
 
-You can also refer to the [`.github/workflows/deploy.yml`](https://github.com/eliottvincent/bay/blob/master/.github/workflows/deploy.yml) file in this repository.
+See the [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
 
-### Development
 
-#### Run development instance (with hot-reload)
-```sh
-bundle exec jekyll serve
-```
+## Questions? Comments?
 
-#### Build and publish the gem
-```sh
-gem build bay_jekyll_theme.gemspec
-```
-
-```sh
-gem push bay_jekyll_theme-1.x.x.gem
-```
+Send them along to the [wwwmake forum](http://groups.google.com/group/wwwmake).
+Thanks!

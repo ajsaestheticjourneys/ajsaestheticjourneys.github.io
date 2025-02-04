@@ -1,42 +1,54 @@
-# NovaJAM Project Setup
+# Netlify Content Ops Starter 
 
-NovaJAM is an Multi-purpose All-in-One JAMstack Template & Web Page Composer which is built with cutting edge technologies: React, NextJS 14, Typescript, Tailwind and seamlessly integrated with Contentful CMS.
+![Content Ops Starter](https://assets.stackbit.com/docs/content-ops-starter-thumb.png)
 
-## Getting Started
+Netlify starter that's made for customization with a flexible content model, component library, [visual editing](https://docs.netlify.com/visual-editor/overview/) and [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
 
-1. Create `.env` file from `.env.template` file
+**⚡ View demo:** [https://content-ops-starter.netlify.app/](https://content-ops-starter.netlify.app/)
 
-```bash
-cp .env.template .env
+## Deploying to Netlify
+
+If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/content-ops-starter)
+
+## Develop with Netlify Visual Editor Locally
+
+The typical development process is to begin by working locally. Clone this repository, then run `npm install` in its root directory.
+
+Run the Next.js development server:
+
+```txt
+cd content-ops-starter
+npm run dev
 ```
 
-2. Install dependencies
+Install the [Netlify Visual Editor CLI](https://www.npmjs.com/package/@stackbit/cli). Then open a new terminal window in the same project directory and run the Netlify visual editor dev server:
 
-```bash
-yarn
+```txt
+npm install -g @stackbit/cli
+stackbit dev
 ```
 
-3. Run the development server:
+This outputs your own Netlify visual editor URL. Open this, register, or sign in, and you will be directed to Netlify's visual editor for your new project.
 
-```bash
-yarn dev
+![Next.js Dev + Visual Editor Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
+
+## Building for production
+
+To build a static site for production, run the following command
+
+```shell
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Next Steps
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Here are a few suggestions on what to do next if you're new to Netlify visual editor:
 
-## Deployment
+- Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
+- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
 
-Easily deploy your Next.js app with [Vercel](https://vercel.com/new/git/external?repository-url=https://github.com/minhwpm/novajam) by clicking the button below:
+## Support
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/minhwpm/novajam)
-
-## About Next.js
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).

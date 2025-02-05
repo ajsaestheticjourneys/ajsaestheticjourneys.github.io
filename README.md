@@ -1,83 +1,173 @@
-# academic
+# Bay
 
-### A Jekyll theme for academia
+[![Version](https://img.shields.io/gem/v/bay_jekyll_theme)](https://rubygems.org/gems/bay_jekyll_theme)
+[![Downloads](https://img.shields.io/gem/dt/bay_jekyll_theme)](https://rubygems.org/gems/bay_jekyll_theme)
 
-![Academic Screenshot](https://raw.githubusercontent.com/LeNPaul/academic/gh-pages/screenshot.png)
+Bay is a simple theme for Jekyll. [[view live]](https://eliottvincent.github.io/bay)
 
-A Jekyll theme designed for academia, although you can use it for almost any other purpose as well:
+Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliottvincent.com](http://eliottvincent.com/).
 
-* Showcase your research interests, publications, your curriculum vitae, the people in your research group, and your contact information.
+![](/screenshot.png)
 
-* Manage courses that you are teaching.
 
-* Provide updates to your students and faulty.
+## Table of contents
+1. [Installation](#installation)
+2. Website sections
+    1. [Header](#header)
+    2. [Footer](#footer)
+    3. [Home page](#home-page)
+    4. [Blog page](#blog-page)
+5. [GitHub Pages](#github-pages)
+6. [Development instructions](#development)
 
-For a guide on how to deploy a Jekyll site using GitHub Pages, please check out [this article](https://paulle.ca/jekyll-tutorials/deploy-jekyll-site-github-pages).
 
-If you like my work then please consider supporting me with [Ko-fi](https://ko-fi.com/paulle).
+### Installation
 
-## Installation
 
-### Ruby Gem Method
+The easiest solution is to [fork this repo](https://github.com/eliottvincent/bay/fork).
+If you want to start from a clean website, follow the steps below:
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "academic-jekyll-theme"
+Create a new Jekyll website:
+```
+jekyll new mysite
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: academic-jekyll-theme
+Open `Gemfile` and replace the line:
+```
+gem "minima"
+```
+with:
+```
+gem "bay_jekyll_theme"
 ```
 
-And then execute:
+Open `_config.yml` and replace the line:
+```
+theme: minima
+```
+with:
+```
+theme: bay_jekyll_theme
+```
+or, for GitHub Pages:
+```
+remote_theme: eliottvincent/bay
+```
 
-    $ bundle
+Finally, install the dependencies:
+```
+bundle install
+```
 
-Or install it yourself as:
+and build the website!
+```
+jekyll serve
+```
 
-    $ gem install academic-jekyll-theme
 
-## Usage
+The website will look somewhat empty at first. That's normal. Follow the next instructions to complete the header and footer components, and the home and blog pages.
 
-### Layouts
+#### Header
+Open the `_config.yml` file and add the following:
+```yml
+header:
+  pages:
+    - name: Home
+      slug: /     # <-- index.md
+    - name: Blog  # <-- blog.md
+    - name: Whatever  # <-- whatever.md
+```
+Re-run `jekyll serve` to see the header updated.
 
-The following sections describe usage instructions for this Jekyll theme,including available layouts, includes, sass and/or assets.
+#### Footer
+Open the `_config.yml` file and add the following:
+```yml
+footer:
+  show_powered_by: true
+  contact:
+    - type: email
+      name: Email
+      value: yourmail@domain.com
+    - type: wechat
+      value: YourWeChatUsername
+      link: "#"
+  follow:
+    - type: twitter
+      name: Twitter
+      link: http://twitter.com/YourTwitterUsername
+      username: "@YourTwitterUsername"
+    - type: facebook
+      name: Facebook
+      link: http://facebook.com/YourFacebookUsername
+    - type: linkedin
+      name: LinkedIn
+      link: http://linkedin.com/in/YourLinkedInUsername
+    - type: github
+      name: GitHub
+      link: http://github.com/YourGitHubUsername
+    - type: dribbble
+      name: Dribbble
+      link: https://dribbble.com/YourDribbbleUsername
+    - type: rss
+      name: RSS
+      link: /feed.xml
+```
+Re-run `jekyll serve` to see the footer updated.
 
-#### Home
+#### Home page
+Create (or edit) the `index.markdown` file and add the following:
+```yml
+---
+layout: home
+profile_picture:
+  src: /assets/img/profile-pic.jpg
+  alt: website picture
+---
 
-The `_layouts/home.html` layout defines the home page for this theme. An introduction to your research group or to yourself can be provided, along with a list of featured publications. There is also a section for providing any updates through posts placed in the `_posts` directory.
+<p>
+  Welcome to my site!
+</p>
+```
 
-#### People
+#### Blog page
+Create `blog.markdown` file and add the following:
+```yml
+---
+layout: blog
+title: Blog
+slug: /blog
+---
 
-The `_layouts/people.html` layout can be used to showcase and describe people in your research group. People are defined in the `_data/settings.yml` file, and markdown pages for each person with the `_layouts/page.html` layout can be placed in the `people` directory.
+This is an example of a "Blog" page, displaying a list of posts.
+<br />
+```
 
-#### Publications
 
-The `_layouts/publications.html` layout can be used to showcase selected publications, or the entire catalogue of publications. Direct links to the paper can be used, or a PDF copy of the paper can be served. Publications are defined in the `_data/publications.yml` file, and any PDF files that are served can be placed in the `publications` directory.
+Your website is ready!
 
-#### Courses
 
-The `_layouts/courses.html` layout can be used to showcase courses that were taught in the past or are currently being taught. Courses are defined in the `_data/settings.yml` file, and markdown pages for each course with the `_layouts/page.html` layout can be placed in the `courses` directory. Related course material, such as PDF files, can also be placed in the `courses` directory in a subdirectory with the same name as the corresponding course.
+### GitHub Pages
 
-#### CV
+You can deploy your website to GitHub Pages, but you cannot use the 1-click GitHub Pages build and deploy system. The issue is that the Bay theme relies on Jekyll 4.3+ (which uses a more modern Sass processor), whereas the GitHub Pages build system uses an older version of Jekyll.
 
-The `_layouts/cv.html` layout can be used to showcase a curriculum vitae. The sections of the cv are defined in the `_data/cv` directory, where each section has its own `<section>.yml` file.
+However, it's fairly easy to build and deploy your website with GitHub Actions, yet use GitHub Pages to host it.
 
-#### Contact
+Further explanations and instructions can be found on the official [Jekyll website](https://jekyllrb.com/docs/continuous-integration/github-actions/).
 
-The `_layouts/contact.html` layout can be used to provide contact information for the research group or the people that lead the research group. Contact information is defined in the `_data/settings.yml` file.
+You can also refer to the [`.github/workflows/deploy.yml`](https://github.com/eliottvincent/bay/blob/master/.github/workflows/deploy.yml) file in this repository.
 
-## Contributing
+### Development
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/LeNPaul/academic. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+#### Run development instance (with hot-reload)
+```sh
+bundle exec jekyll serve
+```
 
-## Development
+#### Build and publish the gem
+```sh
+gem build bay_jekyll_theme.gemspec
+```
 
-To set up your environment to develop this theme, run `bundle install`, then run `bundle exec jekyll serve`, and open your browser at `http://localhost:4000`. This starts a Jekyll server using this theme. Make changes to the pages, documents, data, etc. like normal to test this theme's contents. As you make modifications to this theme the site will regenerate and you should see the changes in the browser after a refresh.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+```sh
+gem push bay_jekyll_theme-1.x.x.gem
+```

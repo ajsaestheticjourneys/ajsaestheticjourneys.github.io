@@ -1,4 +1,59 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "academic" # the name of your site, e.g. ACME Corp.
-description: "a Jekyll theme for academia"
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+title: AJ's '
+description: B is a minimal Jekyll Theme.
+baseurl: "/"
+url: "https://ajsaestheticjourneys.github.io"
+og_image: /assets/img/profile-pic.jpg
+google_analytics: "UA-121636368-3"
+
+header:
+  pages:
+    - name: Home
+      slug: "/"
+    - name: About
+      slug: "/work"
+    - name: A&E Dashboard
+      slug: "/emergencyroom"
+    - name: HCAHPS Dashboard
+      slug: "/patientsatisfaction"
+    - name: Vaccination Dashboard
+      slug: "/vaccinationmetrics"
+
+footer:
+  show_powered_by: true
+  contact:
+    - type: email
+      name: Email
+      value: albertqpome@gmail.com
+  follow:
+    - type: linkedin
+      name: LinkedIn
+      link: http://linkedin.com/in/YourLinkedInUsername
+    - type: github
+      name: GitHub
+      link: http://github.com/YourGitHubUsername
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
+plugins:
+  - jekyll-feed
+
+# Excluded items
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Used for defeating caching
+version: 1

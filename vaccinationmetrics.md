@@ -1,11 +1,15 @@
 ---
-layout: dashboard
+layout: default
 title: "Vaccination Dashboard"
-dashboard_url: "https://your-tableau-link-for-vaccination-metrics-dashboard"
-permalink: /vaccinationmetrics/
+permalink: /vaccinationmetrics
+full-width: true
 ---
 
-<p>This dashboard visualises...</p>
+<div class="dashboard-wrapper">
+    <h1>Vaccination Dashboard</h1>
+
+<p>This dashboard visualizes</p>
 
 <iframe src="https://public.tableau.com/views/VaccinationDashboard6/Dashboard?:showVizHome=no&embed=true" width="1400" height="800"></iframe>
 </div>
+

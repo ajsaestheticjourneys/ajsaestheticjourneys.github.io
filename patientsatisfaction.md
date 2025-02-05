@@ -1,11 +1,13 @@
 ---
-layout: dashboard
+layout: default
 title: "HCAHPS Dashboard"
-dashboard_url: "https://your-tableau-link-for-patient-satisfaction-dashboard"
-permalink: /patientsatisfaction/
+permalink: /patientsatisfaction
+full-width: true
 ---
 
-<p>
-    <h1> HCAHPS </h1>
-    This dashboard analyzes patient satisfaction scores from HCAHPS surveys.</p>
+<div class="dashboard-wrapper">
+  <div class="page-content full-width">
+    <h1>HCAHPS Dashboard</h1>
+    <p>This dashboard analyzes patient satisfaction scores from HCAHPS surveys.</p>
     <iframe src="https://public.tableau.com/views/HCAHPSPatientSurveySatisfactionScores/HCAHPSSurveyDashboard?:showVizHome=no&embed=true" width="1400" height="800"></iframe>
+</div>

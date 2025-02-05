@@ -1,4 +1,7 @@
 menu:
+- {name: 'A&E Dashboard', url: '/emergencyroom'}
+- {name: 'HCAHPS Dashboard', url: '/patientsatisfaction'}
+- {name: 'Vaccination Dashboard', url: '/vaccinationmetrics'}
 - {name: 'people', url: '/people'}
 - {name: 'publications', url: '/publications'}
 - {name: 'courses', url: '/courses'}

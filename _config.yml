@@ -30,10 +30,10 @@ footer:
   follow:
     - type: linkedin
       name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: https://www.linkedin.com/in/al-%D9%8B-b130b2300/
     - type: github
       name: GitHub
-      link: http://github.com/YourGitHubUsername
+      link: https://ajsaestheticjourneys.github.io/
 
 # Build settings
 markdown: kramdown

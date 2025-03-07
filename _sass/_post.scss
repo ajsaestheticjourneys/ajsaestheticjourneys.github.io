@@ -24,7 +24,7 @@
   color: #777;
   font-family: variables.$base-font-family;
   font-style: oblique;
-  position: left;
+  position: relative;
   top: -0.3em;
 
   @include mixins.media-query(variables.$on-mobile) {

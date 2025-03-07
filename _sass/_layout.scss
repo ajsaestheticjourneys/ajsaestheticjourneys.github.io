@@ -6,6 +6,7 @@
  * Site header
  */
 .site-header {
+  position: relative;
   border-bottom: 1px solid variables.$color-grey-light;
   min-height: 56px;
   padding-top: 10px;
@@ -21,11 +22,11 @@
   font-size: 26px;
   line-height: 56px;
   letter-spacing: -1px;
+  float: left;
 
-img {
-    max-width: 30%;
-    height: auto;
-}
+  img {
+    height: 23px;
+  }
 
   &,
   &:visited {
@@ -38,6 +39,7 @@ img {
  */
 .site-nav {
   z-index: 10;
+  float: right;
   line-height: 56px;
   background-color: variables.$color-background;
 
@@ -163,47 +165,9 @@ img {
  * Page content
  */
 .page-content {
-  width: 100%;
-  max-width: none;
-  padding: 0 20px;
+  padding: variables.$spacing-unit 0;
 }
 
 .page-heading {
   font-size: 20px;
-}
-
-.dashboard-wrapper {
-    max-width: none;
-    padding: 0 20px;
-}
-
-.full-width {
-    width: 100%;
-    max-width: none;
-    padding: 0 20px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.wrapper {
-    padding-top: 0 !important; /* Remove unnecessary space */
-    margin-top: 0 !important;
-}
-
-.content {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-}
-
-.full-width-text {
-    width: 1400px;
-    height: 835px;
-    margin: 0 auto;
-    padding: 20px;
-    font-size: 18px;
-    line-height: 1.5;
-    background-color: #f8f8f8;
 }

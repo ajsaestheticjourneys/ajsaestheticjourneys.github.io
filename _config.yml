@@ -1,8 +1,8 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: AJ's Aesthetic Journeys
-description: 
+title: AJX
+description: B is a minimal Jekyll Theme.
 baseurl: "/"
 url: "https://ajsaestheticjourneys.github.io"
 og_image: /assets/img/profile-pic.jpg
@@ -13,7 +13,7 @@ header:
     - name: Home
       slug: "/"
     - name: About
-      slug: "/work"
+      slug: "/about"
     - name: A&E Dashboard
       slug: "/emergencyroom"
     - name: HCAHPS Dashboard
@@ -26,14 +26,17 @@ footer:
   contact:
     - type: email
       name: Email
-      value: albertqpome@gmail.com
+      value: yourmail@domain.com
+    - type: wechat
+      value: YourWeChatUsername
+      link: "#"
   follow:
     - type: linkedin
       name: LinkedIn
-      link: https://www.linkedin.com/in/al-%D9%8B-b130b2300/
+      link: http://linkedin.com/in/YourLinkedInUsername
     - type: github
       name: GitHub
-      link: https://ajsaestheticjourneys.github.io/
+      link: http://github.com/YourGitHubUsername
 
 # Build settings
 markdown: kramdown

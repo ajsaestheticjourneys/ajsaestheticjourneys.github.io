@@ -1,7 +1,20 @@
 ---
 layout: work
-title: About
+title: Work
 slug: /work
+items:
+  - title: My Interest 1
+    image:
+      src: /assets/img/work/water.png
+      alt: water
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  - title: My Interest 2
+    image:
+      src: /assets/img/work/sand.png
+      alt: sand
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 ---
 
-As a newly qualified GPhC-registered pharmacist with experience in community pharmacy and hospital outpatient roles, I’ve developed strong research, IT, and presentation skills, along with the ability to communicate effectively with the public. Combining this with my passion for software development, I leverage SQL for data cleaning and analysis, Tableau for visualiiing key healthcare metrics, and GitHub for version control and collaboration. I’m keen on using technology to drive innovation in healthcare, supporting data-driven decision-making to help healthcare professionals enhance patient care, improve operational efficiency, and optimise resources.
+This is an example of a "Work" page, displaying your work, your interests, your projects.
+<br />
+<br />

@@ -4,11 +4,8 @@ profile_picture:
   src: /assets/img/profile-pic.jpg
   alt: website picture
 ---
+<p> Welcome to <b>AJ's Aesthetic Journeys!</b> </p>
+<p> This site serves as a platform to showcase my expertise in cleaning, analysing, and visualising healthcare-related data using RWFD, Tableau, and SQL.
 
-<p>
-  Welcome! This site serves as an example for the Bay Jekyll theme. Bay is a very simple and minimal theme, directly inspired by Dan Grover's <a href="http://dangrover.com">website</a>.
-</p>
-
-<p>
-  You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
-</p>
+I use Real-World Fake Data (RWFD) datasets to test and refine my skills and apply SQL to deep cleaning, transform, and optimise data to  find useful patterns and trends. This involves structuring raw datasets and writing queries to uncover important trends. With Tableau, I design interactive dashboards that brings the data to life by highlighting key healthcare trends, patient outcomes, and operational efficiencies.
+Through these tools, this site demonstrates how data-driven decision-making can enhance healthcare processes and improve patient care. </p>

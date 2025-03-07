@@ -24,7 +24,7 @@
   color: #777;
   font-family: variables.$base-font-family;
   font-style: oblique;
-  position: relative;
+  position: left;
   top: -0.3em;
 
   @include mixins.media-query(variables.$on-mobile) {
@@ -32,6 +32,8 @@
   }
 }
 
+ @include media-query($on-mobile) {
+     
 .post-meta .post-date {
   text-transform: uppercase;
   font-size: 120%;

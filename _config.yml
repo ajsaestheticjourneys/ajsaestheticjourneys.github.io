@@ -1,49 +1,39 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: Bay Jekyll Theme
-description: Bay is a minimal Jekyll Theme.
-baseurl: "/bay"
-url: "https://eliottvincent.github.io"
+title: AJ's Aesthetic Journeys
+description: 
+baseurl: "/"
+url: "https://ajsaestheticjourneys.github.io"
 og_image: /assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
 
 header:
   pages:
     - name: Home
-      slug: /
-    - name: Work
-    - name: Blog
+      slug: "/"
+    - name: About
+      slug: "/work"
+    - name: A&E Dashboard
+      slug: "/emergencyroom"
+    - name: HCAHPS Dashboard
+      slug: "/patientsatisfaction"
+    - name: Vaccination Dashboard
+      slug: "/vaccinationmetrics"
 
 footer:
   show_powered_by: true
   contact:
     - type: email
       name: Email
-      value: yourmail@domain.com
-    - type: wechat
-      value: YourWeChatUsername
-      link: "#"
+      value: albertqpome@gmail.com
   follow:
-    - type: twitter
-      name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - type: facebook
-      name: Facebook
-      link: http://facebook.com/YourFacebookUsername
     - type: linkedin
       name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: https://www.linkedin.com/in/al-%D9%8B-b130b2300/
     - type: github
       name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - type: dribbble
-      name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - type: rss
-      name: RSS
-      link: /feed.xml
+      link: https://ajsaestheticjourneys.github.io/
 
 # Build settings
 markdown: kramdown

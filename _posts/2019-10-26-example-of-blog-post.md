@@ -6,7 +6,7 @@ blurb: "A look at an example post using Bay Jekyll theme."
 og_image: /assets/img/content/post-example/Banner.jpg
 ---
 
-<img src="{{ "/assets/img/content/post-example/Banner.jpg" | absolute_url }}" alt="bay" class="post-pic"/>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/img/content/post-example/Banner.jpg" class="post-pic"/>
 <br />
 <br />
 

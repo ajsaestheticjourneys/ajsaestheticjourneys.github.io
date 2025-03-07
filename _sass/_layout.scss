@@ -17,10 +17,6 @@
   }
 }
 
-  @include media-query($on-mobile) {
-    padding-top: 0;
-    padding-bottom: 0;
-
 .site-title {
   font-size: 26px;
   line-height: 56px;

@@ -11,6 +11,34 @@ $("a.menu-icon").on("click", function(event) {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the menu icon and menu elements
+  const menuIcon = document.querySelector('.site-nav .menu-icon');
+  const menu = document.querySelector('.site-nav .menu');
+  
+  // Only add click handler if elements exist
+  if (menuIcon && menu) {
+    menuIcon.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Toggle menu visibility
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!menu.contains(e.target) && e.target !== menuIcon) {
+        menu.style.display = 'none';
+      }
+    });
+  }
+});
+
 /**
  * Footer year
  */

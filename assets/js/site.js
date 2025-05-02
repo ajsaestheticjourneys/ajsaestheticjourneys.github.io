@@ -10,7 +10,7 @@ $("a.menu-icon").on("click", function(event) {
       : "none"
   });
 });
-    
+
 /**
  * Footer year
  */
@@ -22,8 +22,7 @@ $(document).ready(function() {
  * Footer email
  */
 $(document).ready(function() {
-  $(".email-link-cloaked").on("click", function(event) {
-    const _link = event.target;
+    $(".email-link-cloaked").on("click", function(event) {const _link = event.target;
 
     const _user = reverseString(_link.getAttribute("data-resu"));
     const _domain = reverseString(_link.getAttribute("data-eman-niamod"));

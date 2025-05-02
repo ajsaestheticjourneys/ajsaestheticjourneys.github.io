@@ -42,6 +42,8 @@ sass:
 plugins:
   - jekyll-feed
 
+emergency_dashboard: /emergencyroom
+
 # Excluded items
 exclude:
   - .sass-cache/
